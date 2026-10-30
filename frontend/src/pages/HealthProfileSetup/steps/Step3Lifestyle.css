@@ -1,0 +1,41 @@
+/* Step3Lifestyle.css */
+
+.step3-root {}
+
+/* Info banner — theme adaptive */
+.step3-note-card {
+    background: rgba(56, 189, 248, 0.12);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    box-shadow: 0 2px 8px rgba(56, 189, 248, 0.1);
+}
+
+.step3-note-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.step3-note-text {
+    font-size: 13px !important;
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 600 !important;
+    color: var(--blue, #38bdf8) !important;
+    line-height: 1.4 !important;
+}
+
+/* Cards: theme-adaptive */
+.step3-smoking-card {
+    background: var(--card-bg) !important;
+    border: 1.5px solid var(--border) !important;
+}
+
+.step3-alcohol-card {
+    background: var(--card-bg) !important;
+    border: 1.5px solid var(--border) !important;
+}

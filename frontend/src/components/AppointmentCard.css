@@ -1,0 +1,260 @@
+/* ── Card ── */
+.ac-card {
+    background: var(--card-bg, #ffffff) !important;
+    color: var(--text-primary, #0f172a) !important;
+    border-radius: 24px !important;
+    border: 1.5px solid var(--border, #dde3ea) !important;
+    box-shadow: var(--shadow-card) !important;
+    padding: 20px !important;
+    margin-bottom: 16px;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ac-card:hover {
+    box-shadow: var(--shadow-elevated) !important;
+    border-color: var(--blue) !important;
+}
+
+/* ── Top Row ── */
+.ac-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.ac-doctor-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ac-avatar {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 14px !important;
+    background: linear-gradient(135deg,
+            var(--blue, #3e7df5),
+            var(--blue-dark, #2d62d4)) !important;
+    color: #ffffff !important;
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+}
+
+.ac-doctor-name {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--text-primary, #010101);
+    margin: 0 0 3px;
+}
+
+.ac-doctor-speciality {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted, #7a8799);
+    margin: 0;
+}
+
+/* ── Status Badge ── */
+.ac-status-badge {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 5px 12px;
+    border-radius: 999px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--green-light, rgba(16, 185, 129, 0.18)) !important;
+    color: var(--green, #10b981) !important;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.ac-badge-upcoming {
+    background: var(--blue-light, #dce9ff) !important;
+    color: var(--blue, #3e7df5) !important;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.ac-badge-arrived {
+    background: var(--green-light, rgba(16, 185, 129, 0.18)) !important;
+    color: var(--green, #10b981) !important;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.ac-badge-served {
+    background: var(--card-bg-subtle, #e8ecee) !important;
+    color: var(--text-muted, #7a8799) !important;
+    border: 1px solid var(--border);
+}
+
+/* ── Token + PIN Row ── */
+.ac-token-pin-row {
+    display: flex;
+    align-items: center;
+    background: var(--card-bg-subtle, #f1f5f9);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.ac-token-box,
+.ac-pin-box {
+    flex: 1;
+    text-align: center;
+}
+
+.ac-token-number {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--blue, #3e7df5);
+    margin: 0 0 4px;
+    letter-spacing: -1px;
+}
+
+.ac-pin-number {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--text-primary, #010101);
+    margin: 0 0 4px;
+    letter-spacing: 6px;
+}
+
+.ac-token-label {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--text-muted, #7a8799);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.ac-divider-v {
+    width: 1px;
+    height: 44px;
+    background: var(--border, #6f6f6f);
+    margin: 0 8px;
+}
+
+/* ── PIN Note ── */
+.ac-pin-note {
+    background: var(--blue-light, #dce9ff);
+    color: var(--blue, #2d62d4);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 14px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* ── Meta Row ── */
+.ac-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.ac-meta-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--card-bg-subtle, #fff3e0);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-primary, #010101);
+}
+
+.ac-meta-icon {
+    font-size: 14px !important;
+    color: var(--text-muted, #7a8799);
+}
+
+/* ── Actions ── */
+.ac-actions {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Live Queue button — active */
+.ac-queue-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 16px;
+    border-radius: var(--radius-btn, 14px);
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+.ac-queue-btn--active {
+    background: linear-gradient(135deg, var(--blue, #3e7df5), var(--blue-dark, #2d62d4));
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(62, 125, 245, 0.3);
+}
+
+.ac-queue-btn--active:hover {
+    box-shadow: 0 6px 20px rgba(62, 125, 245, 0.45);
+    transform: translateY(-1px);
+}
+
+.ac-queue-btn--inactive {
+    background: var(--card-bg-subtle, #e8ecee);
+    color: var(--text-muted, #7a8799);
+    cursor: not-allowed;
+    font-size: 12px;
+}
+
+.ac-queue-icon {
+    font-size: 16px !important;
+}
+
+/* Cancel button */
+.ac-cancel-btn {
+    padding: 12px 16px;
+    border-radius: var(--radius-btn, 14px);
+    border: 1.5px solid var(--border, #dde3ea);
+    background: var(--card-bg, #ffffff);
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted, #7a8799);
+    cursor: pointer;
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.ac-cancel-btn:hover {
+    border-color: var(--error-text, #d94f4f);
+    color: var(--error-text, #d94f4f);
+    background: var(--error-bg, #fff0f0);
+}
+
+/* ── Responsive ── */
+@media (min-width: 480px) {
+    .ac-token-number {
+        font-size: 36px;
+    }
+
+    .ac-pin-number {
+        font-size: 30px;
+    }
+}

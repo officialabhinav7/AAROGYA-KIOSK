@@ -1,0 +1,93 @@
+/* Step6MedsAllergies.css */
+
+.step6-root {}
+
+.step6-subtitle {
+    font-size: 12px !important;
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 600 !important;
+    color: var(--text-muted) !important;
+    margin-bottom: 14px !important;
+    margin-top: -10px !important;
+    line-height: 1.4 !important;
+}
+
+/* ── AI note banner ── */
+.step6-ai-note {
+    background: rgba(56, 189, 248, 0.12);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    box-shadow: 0 2px 8px rgba(56, 189, 248, 0.1);
+}
+
+.step6-ai-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.step6-ai-text {
+    font-size: 13px !important;
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 600 !important;
+    color: var(--blue, #38bdf8) !important;
+    line-height: 1.4 !important;
+}
+
+/* ── Card gradients ── */
+.step6-meds-card {
+    background: var(--card-bg) !important;
+    border: 1.5px solid var(--border) !important;
+}
+
+.step6-allergy-card {
+    background: var(--card-bg) !important;
+    border: 1.5px solid var(--border) !important;
+}
+
+/* ── Medication chips — blue/cyan ── */
+.step6-chip--blue.MuiChip-root {
+    background: rgba(56, 189, 248, 0.14);
+    color: var(--blue, #38bdf8);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    font-weight: 700;
+}
+
+.step6-chip--blue.MuiChip-root:hover {
+    background: rgba(56, 189, 248, 0.25);
+}
+
+.step6-chip--blue.MuiChip-root .MuiChip-deleteIcon {
+    color: var(--blue, #38bdf8);
+    opacity: 0.75;
+}
+
+.step6-chip--blue.MuiChip-root .MuiChip-deleteIcon:hover {
+    opacity: 1;
+    color: #f43f5e;
+}
+
+/* ── Allergy chips — semantic red ── */
+.step6-chip--red.MuiChip-root {
+    background: rgba(244, 63, 94, 0.14);
+    color: #f43f5e;
+    border: 1px solid rgba(244, 63, 94, 0.35);
+    font-weight: 700;
+}
+
+.step6-chip--red.MuiChip-root:hover {
+    background: rgba(244, 63, 94, 0.25);
+}
+
+.step6-chip--red.MuiChip-root .MuiChip-deleteIcon {
+    color: #f43f5e;
+    opacity: 0.75;
+}
+
+.step6-chip--red.MuiChip-root .MuiChip-deleteIcon:hover {
+    opacity: 1;
+}

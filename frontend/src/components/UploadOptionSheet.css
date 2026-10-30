@@ -1,0 +1,105 @@
+.sheet-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(1, 1, 1, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    animation: fadeIn 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.upload-options-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 480px;
+    background: var(--card-bg, #ffffff);
+    color: var(--text-primary, #0f172a);
+    border: 1px solid var(--border, #dde3ea);
+    border-radius: 24px 24px 0 0;
+    padding: 12px 28px 40px;
+    z-index: 101;
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateX(-50%) translateY(100%);
+    }
+
+    to {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.sheet-handle {
+    width: 40px;
+    height: 4px;
+    background: var(--border, #dde3ea);
+    border-radius: 99px;
+    margin: 0 auto 20px;
+}
+
+.sheet-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-muted, #7a8799);
+    margin: 0 0 20px 4px;
+}
+
+.sheet-options {
+    display: flex;
+    gap: 16px;
+}
+
+.sheet-option-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.sheet-option-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    border: 1.5px solid var(--border, #dde3ea);
+    background: var(--card-bg-subtle, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary, #010101);
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sheet-option-btn:hover .sheet-option-icon,
+.sheet-option-btn:active .sheet-option-icon {
+    border-color: var(--blue, #3e7df5);
+    background: var(--blue-light, #dce9ff);
+    color: var(--blue, #3e7df5);
+}
+
+.sheet-option-label {
+    font-family: "Nunito", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-primary, #010101);
+}
